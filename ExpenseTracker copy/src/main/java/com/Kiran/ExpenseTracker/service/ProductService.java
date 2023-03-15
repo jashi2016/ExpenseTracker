@@ -67,4 +67,21 @@ public class ProductService {
         }
         return response;
     }
+
+    public List<Product> getProductsByDate(String date) {
+       return repository.findAll().stream().filter(e->e.getLocalDate().toString().equals(date)).toList();
+    }
+
+    public Integer getTotalExpenditure(Integer month,Integer id) {
+        Integer sum=0;
+        List<Product> products = repository.findAll().stream().filter(e->e.getLocalDate().getMonthValue()==month).toList();
+        System.out.println(products);
+        for(Product p: products){
+            if(p.getUser().getUserId()==id)
+            {
+                sum+=p.getProductPrice();
+            }
+        }
+        return sum;
+    }
 }

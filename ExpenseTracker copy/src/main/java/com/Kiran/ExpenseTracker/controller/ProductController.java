@@ -50,4 +50,14 @@ public class ProductController {
         else
             return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    @GetMapping("/getdate")
+    public List<Product> getProductsByDate(@RequestParam String date){
+        return service.getProductsByDate(date);
+    }
+
+    @GetMapping("/getexp")
+    public Integer getTotalExpenditure(@RequestParam Integer month,Integer id){
+        return service.getTotalExpenditure(month,id);
+    }
 }
