@@ -1,9 +1,4 @@
 # ExpenseTracker
-Frameworks used:
-Java
-SpringBoot
-Spring JPA
-MySQL
 
 
 User controller has 4 methods:
@@ -41,6 +36,10 @@ This api returns all the expenses on a particular date
 This api returns total expenditure of a user in a particular month.
 
 Data structure used: List
+
+Flow:
+
+Once the api is hit with respective data. Controller will contact service class and executes respective methods. From service method, it contacts respective repository and performs necessary action and returns the resukt to the controller
 
 Technology used: 1 springboot 2 java 3 Aws 4. Sql
 
