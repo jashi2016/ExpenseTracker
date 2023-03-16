@@ -38,6 +38,12 @@ It consists of two entity classes which are blueprint for the user and product w
 The follwing flow diagram depicts the data flow of the application
 ![Screenshot 2023-03-16 151357](https://user-images.githubusercontent.com/49145285/225578136-72cc247d-c034-46dc-b03c-f9966b2ac074.png)
 
+##Swagger-ui implemetation:
+Swagger ui was implemented and here are the samples of the controllers:
+![Screenshot 2023-03-16 153240](https://user-images.githubusercontent.com/49145285/225583329-02409265-5157-4558-b927-15aa6f2258b0.png)
+
+![Screenshot 2023-03-16 153214](https://user-images.githubusercontent.com/49145285/225583345-4cb16bbe-8f0d-43a6-bf05-0b872e9fb6e9.png)
+
 ## Tech Stack
 
 **Programming Language:** Java
