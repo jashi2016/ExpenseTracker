@@ -1,5 +1,6 @@
 # ExpenseTracker
 
+swaggerui link:http://13.49.220.202:8080/swagger-ui/index.html#/
 
 User controller has 4 methods:
 
